@@ -14,10 +14,13 @@
   --dark-accet-dt: #204136;
   --hover-green-dt: #009156;
   --error: #e74a3b;
+
+  --main-font: 'Poppins', sans-serif;
+  --secondary-font: 'Impact', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -29,7 +32,7 @@ body {
 
 h1,
 h2 {
-  font-family: 'Impact', sans-serif;
+  font-family: var(--secondary-font);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
