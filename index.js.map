@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/tech-skills.js"],"sourcesContent":["const marquee = document.querySelector('.marquee');\nconst content = marquee.innerHTML;\nmarquee.innerHTML += content;"],"names":["marquee","content"],"mappings":"ssBAAA,MAAMA,EAAU,SAAS,cAAc,UAAU,EAC3CC,EAAUD,EAAQ,UACxBA,EAAQ,WAAaC"}
