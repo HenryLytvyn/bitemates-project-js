@@ -1,0 +1,110 @@
+.reviews-section {
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+.reviews-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    margin-bottom: 40px;
+}
+
+.swiper {
+}
+.reviews-slider-js {
+    margin-bottom: 24px;
+}
+
+.review-item {
+    border-radius: 16px;
+    padding: 32px;
+    min-height: 296px;
+    background: #e4e5e6;
+    
+}
+
+.swiper-wrapper {
+}
+
+.reviews-list-js {
+}
+
+.review-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: --black;
+    margin-bottom: 32px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.author-img {
+    width: 40px;
+    height: 40px;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: --black;
+    
+}
+
+.reviews-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+
+}
+.reviews-btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.review-arrow-icon {
+    pointer-events: none;
+    transition: opacity 250ms ease;
+}
+
+.reviews-btn:disabled {
+    border: 1px solid #e4e5e6;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .reviews-btn:disabled .review-arrow-icon path {
+    stroke: #e4e5e6;
+    opacity: 0.6;
+  }
+
+  .prev-btn-js .arrow-icon {
+    transform: rotate(-180deg);
+  }
+
+  .visually-hidden {
+    display: none;
+  }
+
+.reviews-placeholder-js {
+}
+.visually-hidden {
+}
