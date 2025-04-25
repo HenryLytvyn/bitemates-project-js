@@ -1,15 +1,7 @@
 
 .visually-hidden {
     position: absolute !important;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    clip-path: inset(50%);
+    
   }
   .marquee-container {
     overflow: hidden;
@@ -92,12 +84,26 @@
     background: var(--black);
   }
   
-  @keyframes scroll {
-    0%   { transform: translateX(0); }
+  @keyframes scroll-fast {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  @keyframes scroll-slow {
+    0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
   .marquee:hover {
     animation-play-state: paused;
+  }
+  .marquee-top {
+    animation: scroll-fast 10s linear infinite;
+    flex-shrink: 0;
+  }
+  
+  .marquee-bottom {
+    animation: scroll-slow 20s linear infinite;
+    flex-shrink: 0;
   }
 
 @media screen and ( min-width: 768px) {
@@ -194,12 +200,26 @@
         background: var(--black);
       }
       
-      @keyframes scroll {
-        0%   { transform: translateX(0); }
+      @keyframes scroll-fast {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      
+      @keyframes scroll-slow {
+        0% { transform: translateX(0); }
         100% { transform: translateX(-50%); }
       }
       .marquee:hover {
         animation-play-state: paused;
+      }
+      .marquee-top {
+        animation: scroll-fast 10s linear infinite;
+        flex-shrink: 0;
+      }
+      
+      .marquee-bottom {
+        animation: scroll-slow 20s linear infinite;
+        flex-shrink: 0;
       }
 }
 
@@ -232,7 +252,7 @@
     flex-direction: row;
     gap: 16px;
     padding: 40px 0px;
-    width: 1517px;
+    width: auto;
     height: 128px;
     background: var(--light-accent);
     position: relative;
@@ -248,8 +268,9 @@
     flex-direction: row;
     gap: 16px;
     padding: 40px 0px;
-    width: 1517px;
+    width: auto;
     height: 128px;
+    
     
   }
   
@@ -260,8 +281,9 @@
   .marquee {
     display: flex;
     gap: 16px;
+    
     width: max-content;
-    animation: scroll 10s ease-in-out infinite;
+    display: inline-flex;
     align-items: center;
   }
   
@@ -299,11 +321,25 @@
     background: var(--black);
   }
   
-  @keyframes scroll {
-    0%   { transform: translateX(0); }
+  @keyframes scroll-fast {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  @keyframes scroll-slow {
+    0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
   .marquee:hover {
     animation-play-state: paused;
+  }
+  .marquee-top {
+    animation: scroll-fast 10s linear infinite;
+    flex-shrink: 0;
+  }
+  
+  .marquee-bottom {
+    animation: scroll-slow 20s linear infinite;
+    flex-shrink: 0;
   }
 }
