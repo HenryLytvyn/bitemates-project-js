@@ -15,7 +15,9 @@
     />
 
     <script type="module" crossorigin src="/bitemates-project-js/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/bitemates-project-js/assets/index-DcBrTx3-.css">
+    <link rel="modulepreload" crossorigin href="/bitemates-project-js/assets/vendor-CfzARMK3.js">
+    <link rel="stylesheet" crossorigin href="/bitemates-project-js/assets/vendor-BIx4N7Dj.css">
+    <link rel="stylesheet" crossorigin href="/bitemates-project-js/assets/index-Cfj32nym.css">
   </head>
   <body>
     <header class="header">
@@ -31,7 +33,7 @@
       <h2 class="visually-hidden">Tech skills</h2>
   
   <div class="marquee-container top">
-    <div class="marquee">
+    <div class="marquee marquee-top">
       <div class="item">HTML/CSS</div><div class="dot green"></div>
       <div class="item">JAVASCRIPT</div><div class="dot green"></div>
       <div class="item">REACT</div><div class="dot green"></div>
@@ -39,7 +41,6 @@
       <div class="item">REACT NATIVE</div><div class="dot green"></div>
       <div class="item">TYPESCRIPT</div><div class="dot green"></div>
 
-      
       <div class="item">HTML/CSS</div><div class="dot green"></div>
       <div class="item">JAVASCRIPT</div><div class="dot green"></div>
       <div class="item">REACT</div><div class="dot green"></div>
@@ -51,7 +52,7 @@
 
   
   <div class="marquee-container bottom angled">
-    <div class="marquee">
+    <div class="marquee marquee-bottom">
       <div class="item item-bottom">HTML/CSS</div><div class="dot black"></div>
       <div class="item item-bottom">JAVASCRIPT</div><div class="dot black"></div>
       <div class="item item-bottom">REACT</div><div class="dot black"></div>
@@ -59,7 +60,6 @@
       <div class="item item-bottom">REACT NATIVE</div><div class="dot black"></div>
       <div class="item item-bottom">TYPESCRIPT</div><div class="dot black"></div>
 
-     
       <div class="item item-bottom">HTML/CSS</div><div class="dot black"></div>
       <div class="item item-bottom">JAVASCRIPT</div><div class="dot black"></div>
       <div class="item item-bottom">REACT</div><div class="dot black"></div>
@@ -71,7 +71,81 @@
       
       
       
-      
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reviews.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="reviews" class="reviews-section container">
+      <h2 class="reviews-title">reviews</h2>
+
+      <div class="swiper reviews-slider-js">
+        <ul class="swiper-wrapper reviews-list-js"></ul>
+      </div>
+      <div class="reviews-btn-wrap">
+        <button
+          class="reviews-btn prev-btn-js"
+          aria-label="Previous review"
+          disabled
+        >
+          <svg
+            class="review-arrow-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M20 12H4"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 18L4 12L10 6"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="reviews-btn next-btn-js" aria-label="Next review">
+          <svg
+            class="review-arrow-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M4 12H20"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14 6L20 12L14 18"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <p class="reviews-placeholder-js visually-hidden">Not found</p>
+    </section>
+  </body>
+</html>
+
       
       
     </main>
