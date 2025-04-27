@@ -1,26 +1,17 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Зупиняє стандартну відправку форми
+const emailInput = document.getElementById('email');
+const emailError = document.getElementById('email-error');
+const emailSuccessIcon = document.getElementById('email-success-icon');
 
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+emailInput.addEventListener('input', function () {
+  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-    // Тут можна робити що завгодно, наприклад, відправити на сервер через fetch:
-    console.log("Email:", email);
-    console.log("Message:", message);
-
-    // Можна показати повідомлення користувачу
-    alert("Форма успішно оброблена!");
-
-    // Або відправити на сервер:
-    /*
-    fetch('/api/send', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email, message })
-    }).then(response => {
-      // обробка відповіді
-    });
-    */
-  });
+  if (pattern.test(emailInput.value.trim())) {
+    emailInput.classList.remove('invalid');
+    emailError.hidden = true;
+    emailSuccessIcon.hidden = false;
+  } else {
+    emailInput.classList.add('invalid');
+    emailError.hidden = false;
+    emailSuccessIcon.hidden = true;
+  }
+});

@@ -110,6 +110,11 @@ li {
   text-align: center;
   color: #f0f0f0;
 }
+#contactForm button:hover,
+#contactForm button:focus {
+  background-color: var(--hover);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 768px) {
   .container-work-together {
     padding-top: 62px;
@@ -193,4 +198,34 @@ li {
     align-items: flex-start;
     gap: 136px;
   }
+}
+.email-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-label input {
+  padding-right: 36px;
+  /* місце для іконки справа */
+}
+
+.success-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.invalid {
+  border: 1px solid red;
 }
