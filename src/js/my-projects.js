@@ -100,14 +100,14 @@ const createMarkup = arr =>
           <h3 class="item_h3">${item.nameOfProject}</h3>
           <button class="btn_visit tablet_desktop_vision" type="button" data-link="${item.link}">
             VISIT<svg width="18" height="18" class="item_svg">
-              <use href="./img/svg/arrows.svg#icon-Arrow-1"></use>
+              <use href="/img/svg/sprite.svg#arrow-visit-btn"></use>
             </svg>
           </button>
         </div>
         <div class="item_div_link mobile-only">
           <button class="btn_visit" type="button" data-link="${item.link}">
             VISIT<svg width="18" height="18" class="item_svg">
-              <use href="./img/svg/arrows.svg#icon-Arrow-1"></use>
+              <use href="/img/svg/sprite.svg#arrow-visit-btn"></use>
             </svg>
           </button>
         </div>
