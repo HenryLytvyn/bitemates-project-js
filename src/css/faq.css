@@ -106,6 +106,7 @@
     font-size: 108px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    max-width: 592px;
   }
 
   .accordion-container {
