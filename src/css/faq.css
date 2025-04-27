@@ -139,13 +139,12 @@
     .faq-section .headline {
       position: absolute;
       max-width: 520px;
-      left: 20px;
+      left: 98px;
       top: 0;
       font-weight: 400;
       font-size: 108px;
       line-height: 1.15;
       letter-spacing: 0.02em;
-      margin-left: 72px;
     }
 
     .accordion-container {
