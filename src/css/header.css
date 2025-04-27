@@ -1,0 +1,136 @@
+/* Styles for Mobile devices */
+@media screen and (max-width: 767px) {
+  .header {
+    max-width: 360px;
+  }
+  .header-container {
+    margin: 0;
+    max-width: 328px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-text {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .header-span {
+    color: var(--accet-green);
+  }
+  .header-nav-item {
+    display: none;
+  }
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .burger-line {
+    height: 2px;
+    background-color: #333;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+}
+
+/* Styles for Tablet devices */
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+  .header-container {
+    margin: 0;
+    padding-right: 32px;
+    max-width: 768px;
+    height: 96px;
+    display: flex;
+    gap: 166px;
+    align-items: center;
+  }
+  .header-text {
+    width: 233px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .header-span {
+    color: var(--accet-green);
+  }
+  .header-nav-item {
+    max-width: 305px;
+    height: 24px;
+  }
+  .header-list {
+    display: flex;
+    gap: 32px;
+  }
+  .header-nav-item-link {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    white-space: nowrap;
+  }
+  .header-nav-item-link:hover {
+    color: var(--accet-green);
+  }
+}
+
+/* Styles for Desktop devices */
+@media screen and (min-width: 1280px) {
+  .burger-btn {
+    display: none;
+  }
+  .header-container {
+    margin: 0;
+    padding: 0;
+    max-width: 1280px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-text {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .header-span {
+    color: var(--accet-green);
+  }
+  .header-nav-item {
+    width: 305px;
+    height: 24px;
+  }
+  .header-list {
+    display: flex;
+    gap: 32px;
+  }
+  .header-nav-item-link {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+  }
+}
