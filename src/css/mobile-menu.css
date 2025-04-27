@@ -1,0 +1,89 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-dt);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.mobile-menu-container {
+  position: relative;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.mobile-menu-logo {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.mobile-menu-logo-span {
+  color: var(--accet-green);
+}
+.mobile-menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--black);
+  font-size: 24px;
+}
+.mobile-menu-list {
+  list-style: none;
+  padding: 296px 0 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.mobile-menu-list li {
+  margin-bottom: 24px;
+}
+.mobile-menu-list a {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--black);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.mobile-menu-list a:hover {
+  color: var(--accet-green);
+}
+.mobile-menu-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  height: 800px;
+  background-image: url('/img/hero/mobile-1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .mobile-menu-bg {
+    background-image: url('/img/hero/mobile-2x.png');
+  }
+}
+.visually-hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
