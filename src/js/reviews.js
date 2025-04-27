@@ -25,10 +25,14 @@ async function fetchReviews() {
       .map(
         ({ avatar_url, author, review }) => `
         <li class="swiper-slide review-item">
-          <p class="review-text">${review}<span class="review-more visually-hidden">...</span></p>
+          <div class="review-text-wrap">
+            <p class="review-text">${review}
+            <button class="review-read-more-btn visually-hidden">read more</button>
+            </p> 
+          </div>
           <div class="review-author-info">
-            <img class="review-author-img" src="${avatar_url}" width="40" heigh="40" alt="${author}" />
-            <p class="reviewer-name">${author}</p>
+              <img class="review-author-img" src="${avatar_url}" width="40" heigh="40" alt="${author}" />
+              <p class="reviewer-name">${author}</p>
           </div>
         </li>`
       )
@@ -36,6 +40,7 @@ async function fetchReviews() {
     reviewsList.innerHTML = markup;
 
     initSwiper();
+
   } catch (error) {
     iziToast.error({
       message: 'Not found',
@@ -80,3 +85,5 @@ function initSwiper() {
     },
   });
 }
+
+
