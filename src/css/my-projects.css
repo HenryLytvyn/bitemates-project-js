@@ -10,12 +10,12 @@
   line-height: 64px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #00b068;
+  color: var(--accet-green);
   padding-bottom: 40px;
   text-align: center;
 }
 .my-projects span {
-  color: black;
+  color: var(--black-dt);
 }
 .my-projects .list {
   display: flex;
@@ -37,40 +37,43 @@
   padding-bottom: 12px;
 }
 .my-projects .item_text {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--black);
   padding-bottom: 16px;
+  width: 100%;
 }
 .my-projects .item_h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--black);
   padding-bottom: 16px;
 }
 .my-projects .list .item_list .div_tablet_desktop_vision {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .my-projects .item_link {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--black);
 }
 .my-projects .item_div_link {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 .my-projects .btn_visit {
   display: flex;
@@ -79,16 +82,16 @@
   padding: 12px 24px;
   width: 125px;
   height: 48px;
-  background: #e4e5e6;
+  background: var(--light-grey);
   justify-content: space-between;
   align-items: center;
 }
 .my-projects .btn_visit:hover {
-  background: #bbb;
+  background: var(--hover-grey);
 }
 .my-projects .item_svg {
   stroke-width: 2px;
-  stroke: #00b068;
+  stroke: var(--accet-green);
 }
 .my-projects .btn_load_more {
   display: flex;
@@ -97,20 +100,20 @@
   border: 0;
   width: 154px;
   height: 52px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--black);
 }
 .my-projects .btn_load_more:hover {
-  color: #00b068;
+  color: var(--accet-green);
 }
 .my-projects .btn_load_more .btn_load_svg {
   stroke-width: 2px;
-  fill: #00b068;
+  fill: var(--accet-green);
 }
 .my-projects .div_btn_load_more {
   display: flex;
