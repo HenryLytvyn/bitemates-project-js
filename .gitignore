@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 drafts
+
+# pull requests list
+pullrequests-list.txt
