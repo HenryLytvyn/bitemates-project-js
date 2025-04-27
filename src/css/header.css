@@ -1,9 +1,11 @@
 /* Styles for Mobile devices */
 @media screen and (max-width: 767px) {
-  .header-container {
-    margin: 0 auto;
-    padding: 0 16px;
+  .header {
     max-width: 360px;
+  }
+  .header-container {
+    margin: 0;
+    max-width: 328px;
     height: 64px;
     display: flex;
     justify-content: space-between;
@@ -34,7 +36,6 @@
     cursor: pointer;
     padding: 0;
   }
-
   .burger-line {
     height: 2px;
     background-color: #333;
@@ -49,15 +50,16 @@
     display: none;
   }
   .header-container {
-    margin: 0 auto;
-    padding: 0 16px;
+    margin: 0;
+    padding-right: 32px;
     max-width: 768px;
     height: 96px;
     display: flex;
-    justify-content: space-between;
+    gap: 166px;
     align-items: center;
   }
   .header-text {
+    width: 233px;
     font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 32px;
@@ -69,7 +71,7 @@
     color: var(--accet-green);
   }
   .header-nav-item {
-    width: 305px;
+    max-width: 305px;
     height: 24px;
   }
   .header-list {
@@ -83,6 +85,7 @@
     line-height: 150%;
     letter-spacing: 0.03em;
     color: var(--black);
+    white-space: nowrap;
   }
   .header-nav-item-link:hover {
     color: var(--accet-green);
@@ -95,8 +98,8 @@
     display: none;
   }
   .header-container {
-    margin: 0 auto;
-    padding: 0 16px;
+    margin: 0;
+    padding: 0;
     max-width: 1280px;
     height: 96px;
     display: flex;
