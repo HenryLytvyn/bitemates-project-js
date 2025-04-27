@@ -10,8 +10,8 @@
         </p>
         <ul class="work-together-info">
           <li>
-            <svg class="modal-close-icon" width="24" height="24">
-              <use href="/src/img/svg/sprite.svg#phone"></use>
+            <svg class="icon" width="24" height="24">
+              <use href="./src/img/svg/sprite.svg#phone"></use>
             </svg>
 
             <a class="work-together-tel" href="tel:+380904567890"
@@ -19,16 +19,16 @@
             >
           </li>
           <li>
-            <svg class="modal-close-icon" width="24" height="24">
-              <use href="/src/img/svg/sprite.svg#email"></use>
+            <svg class="icon" width="24" height="24">
+              <use href="./src/img/svg/sprite.svg#email"></use>
             </svg>
             <a class="mail" href="mailto:lloydjefferson@gmail.com"
               >lloydjefferson@gmail.com</a
             >
           </li>
           <li>
-            <svg class="modal-close-icon" width="24" height="24">
-              <use href="/src/img/svg/sprite.svg#geolocation"></use>
+            <svg class="icon" width="24" height="24">
+              <use href="./src/img/svg/sprite.svg#geolocation"></use>
             </svg>
             <span class="add">USA, New York</span>
           </li>
@@ -36,34 +36,15 @@
       </div>
       <div class="contact-right">
         <form id="contactForm">
-          <label for="email" class="email-label">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email*"
-              required
-              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-            />
-            <svg
-              id="email-success-icon"
-              class="success-icon"
-              viewBox="0 0 24 24"
-              hidden
-            >
-              <path
-                d="M20 6L9 17l-5-5"
-                stroke="green"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <div class="error-message" id="email-error" hidden>
+          <div class="email-label">
+            <input id="email" type="email" placeholder="Enter your email" />
+            <!-- вставити галочку з svg -->
+            <span id="success-icon" class="success-icon">&#10003;</span>
+
+            <p id="email-error" class="error-message" hidden>
               Invalid email, try again
-            </div>
-          </label>
+            </p>
+          </div>
 
           <label for="message">
             <textarea
@@ -80,73 +61,3 @@
     </div>
   </div>
 </section>
-
-<div class="modal-backdrop is-hidden" id="modalBackdrop">
-  <div class="modal-window">
-    <button class="modal-close-btn" type="button" id="modalCloseBtn">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18 6L6 18"
-          stroke="#292929"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M6 6L18 18"
-          stroke="#292929"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-    <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
-    <p class="modal-text">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
-  </div>
-</div>
-<!-- <div class="modal-backdrop" hidden>
-  <div class="modal-window">
-    <button class="modal-close-btn" type="button">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18 6L6 18"
-          stroke="#292929"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M6 6L18 18"
-          stroke="#292929"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-    <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
-    <p class="modal-text">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
-  </div>
-</div> -->
-<!-- <svg class="modal-close-icon" width="24" height="24">
-        <use href="/src/img/sprite.svg#mobile-menu-close"></use>
-      </svg> -->
