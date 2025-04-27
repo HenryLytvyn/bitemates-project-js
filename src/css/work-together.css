@@ -207,17 +207,24 @@ li {
 
 .email-label input {
   padding-right: 36px;
-  /* місце для іконки справа */
 }
 
 .success-icon {
+  display: none;
+
   position: absolute;
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  font-size: 20px;
+
+  color: green;
+
   pointer-events: none;
+}
+
+.success-icon.show {
+  display: inline-block;
 }
 
 .error-message {
@@ -228,4 +235,7 @@ li {
 
 .invalid {
   border: 1px solid red;
+}
+.email-label input.invalid {
+  color: red;
 }
