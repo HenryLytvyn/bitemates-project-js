@@ -1,0 +1,196 @@
+.container-work-together {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.title-work-together {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  padding-bottom: 40px;
+}
+
+.title-work-together span {
+  color: #00b068;
+}
+
+.text {
+  padding-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.work-together-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 258px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+li {
+  display: flex;
+  align-items: center; /* вирівнює іконку і текст по центру */
+  gap: 8px; /* відступ між іконкою і текстом */
+}
+
+#email {
+  background: #e4e5e6;
+  border-radius: 8px;
+  padding: 16px;
+  width: 320px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#message {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 16px;
+  width: 320px;
+  height: 128px;
+  background: #e4e5e6;
+}
+
+#contactForm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  width: 320px;
+  height: 288px;
+}
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+#contactForm button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 320px;
+  height: 48px;
+  background: #00b068;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  .container-work-together {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .title-work-together {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    padding-bottom: 60px;
+  }
+
+  .text {
+    padding-bottom: 32px;
+    font-size: 20px;
+    max-width: 488px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+  }
+  .work-together-info {
+    flex-direction: row;
+    gap: 16px;
+    width: 639px;
+    padding-bottom: 60px;
+  }
+  #email {
+    width: 704px;
+  }
+  #message {
+    width: 704px;
+  }
+  #contactForm {
+    width: 704px;
+  }
+
+  #contactForm button {
+    width: 173px;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-work-together {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  .title-work-together {
+    padding-bottom: 80px;
+  }
+
+  .text {
+    padding-bottom: 120px;
+  }
+  .work-together-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 258px;
+    padding-bottom: 0;
+  }
+  #contactForm {
+    width: 592px;
+    height: 288px;
+  }
+  #email {
+    width: 592px;
+  }
+  #message {
+    width: 592px;
+  }
+  #contactForm {
+    width: 592px;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 136px;
+  }
+}

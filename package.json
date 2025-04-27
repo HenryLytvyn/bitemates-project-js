@@ -18,7 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.4.0",
-    "axios": "^1.8.4",
+    "axios": "^1.9.0",
     "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.3",
     "swiper": "^11.2.6",
