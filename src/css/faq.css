@@ -14,9 +14,6 @@
   text-transform: uppercase;
   color: var(--black);
 }
-.question {
-  color: var(--accet-green);
-}
 
 .accordion-container {
   display: flex;
