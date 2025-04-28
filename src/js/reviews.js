@@ -50,8 +50,6 @@ async function fetchReviews() {
   }
 }
 
-fetchReviews();
-
 function initSwiper() {
   const swiper = new Swiper('.reviews-slider-js', {
     slidesPerView: 1,
