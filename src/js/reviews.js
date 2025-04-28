@@ -26,9 +26,7 @@ async function fetchReviews() {
         ({ avatar_url, author, review }) => `
         <li class="swiper-slide review-item">
           <div class="review-text-wrap">
-            <p class="review-text">${review}
-            <button class="review-read-more-btn visually-hidden">read more</button>
-            </p> 
+            <p class="review-text">${review}</p> 
           </div>
           <div class="review-author-info">
               <img class="review-author-img" src="${avatar_url}" width="40" heigh="40" alt="${author}" />
@@ -38,6 +36,8 @@ async function fetchReviews() {
       )
       .join('');
     reviewsList.innerHTML = markup;
+
+  
 
     initSwiper();
 
@@ -86,4 +86,16 @@ function initSwiper() {
   });
 }
 
+function enableReviewExpand() {
+  if (window.innerWidth < 1280) {
+    reviewsList.addEventListener('click', e => {
+      const reviewItem = e.target.closest('.review-item');
+      if (reviewItem) {
+        reviewItem.classList.toggle('is-expanded');
+      }
+    });
+  }
+}
+
+fetchReviews().then(enableReviewExpand);
 
