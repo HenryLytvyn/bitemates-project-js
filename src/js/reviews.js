@@ -55,6 +55,7 @@ function initSwiper() {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: false,
+    speed: 500,
     navigation: {
       prevEl: '.prev-btn-js',
       nextEl: '.next-btn-js',
@@ -85,15 +86,24 @@ function initSwiper() {
 }
 
 function enableReviewExpand() {
-  if (window.innerWidth < 1280) {
-    reviewsList.addEventListener('click', e => {
-      const reviewItem = e.target.closest('.review-item');
-      if (reviewItem) {
-        reviewItem.classList.toggle('is-expanded');
-      }
-    });
-  }
-}
+  reviewsList.addEventListener('click', e => {
+    if (window.innerWidth >= 1280) return; 
+    const reviewItem = e.target.closest('.review-item');
+    if (reviewItem) {
+      reviewItem.classList.toggle('is-expanded');
+    }
+  });
+};
 
 fetchReviews().then(enableReviewExpand);
+
+reviewsList.addEventListener('click', e => {
+  if (window.innerWidth >= 1280) return;
+  const reviewItem = e.target.closest('.review-item');
+  const reviewTextWrap = e.target.closest('.review-text-wrap');
+  
+  if (reviewItem && !reviewTextWrap) {
+    reviewItem.classList.toggle('is-expanded');
+  }
+});
 

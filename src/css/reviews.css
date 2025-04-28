@@ -66,7 +66,8 @@
     position: relative;
     display: block;
     margin-bottom: 24px;
-    transition: max-height 5s ease;
+    transition: max-height 0.7s ease, height 0.7s ease, padding 0.7s ease;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -80,6 +81,7 @@
         max-height: 96px;
         overflow-y: auto; 
         padding-right: 8px; 
+        scroll-behavior: smooth;
     }
 }
 
@@ -127,6 +129,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
     gap: 16px;
 }
 
