@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset(); 
     } catch (error) {
       iziToast.error({
-        title: 'Помилка',
+        title: 'Error',
         message: error.message || 'An error occurred. Try again!',
         position: 'topRight',
       });
