@@ -178,6 +178,7 @@
     letter-spacing: 0.02em;
     display: block;
     text-align: left;
+    margin-right: 0;
     margin-bottom: 40px;
   }
 
@@ -225,7 +226,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    width: 336px;
+    width: 100%;
   }
 
   .container-educ-role {
@@ -377,5 +378,73 @@
     padding-top: 82px;
     padding-bottom: 82px;
   }
+
+  .photo-container {
+    width: 384px;
+    margin: 312px 136px 80px 208px;
+  }
+
+  .bio-container {
+    width: 488px;
+    margin-bottom: 40px;
+  }
+
+  .bio-title {
+    margin-right: 426px;
+  }
+
+  .container-educ-role {
+    width: 904px;
+    margin-right: 104px;
+    margin-left: 208px;
+    gap: 136px;
+  }
+
+  .education-title {
+    margin-right: 173px;
+  }
+
+  .education-text {
+    width: 352px;
+  }
+
+  .role-title {
+    margin-right: 296px;
+  }
+
+  .role-text {
+    width: 360px;
+  }
+
+  .decor {
+    width: 384px;
+    height: 288px;
+    bottom: 264px;
+  }
 }
+
+@media screen and (min-width: 1280px) {
+  .decor {
+    background-image: url(../img/about-me/decor-bg-2-desk.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-resolution: 96dpi) {
+  .decor {
+    background-image: url(../img/about-me/decor-bg-2-desk@1x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .decor {
+    background-image: url(../img/about-me/decor-bg-2-desk@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 288dpi) {
+  .decor {
+    background-image: url(../img/about-me/decor-bg-2-desk@3x.png);
+  }
+}
+
 /* #endregion styles for Desktop devices */
