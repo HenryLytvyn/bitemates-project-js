@@ -162,8 +162,6 @@
   }
   .my-projects .load_underline {
     width: 117px;
-    height: 2px;
-    background-color: var(--accet-green);
   }
 }
 @media screen and (min-width: 1280px) {
