@@ -343,18 +343,18 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-resolution: 96dpi) {
+  .decor {
+    background-image: url(../img/about-me/decor-bg-6-tabl@1x.png);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .decor {
     background-image: url(../img/about-me/decor-bg-6-tabl.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-resolution: 96dpi) {
-  .decor {
-    background-image: url(../img/about-me/decor-bg-6-tabl@1x.png);
   }
 }
 
@@ -423,15 +423,15 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .decor {
-    background-image: url(../img/about-me/decor-bg-2-desk.png);
-  }
-}
-
 @media screen and (min-width: 1280px) and (max-resolution: 96dpi) {
   .decor {
     background-image: url(../img/about-me/decor-bg-2-desk@1x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .decor {
+    background-image: url(../img/about-me/decor-bg-2-desk.png);
   }
 }
 
