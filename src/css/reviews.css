@@ -39,10 +39,14 @@
     margin-bottom: 24px;
 }
 
+.swiper-slide {
+    height: auto; 
+  }
+
 .review-item {
     border-radius: 16px;
     padding: 32px;
-    height: auto;
+    min-height: 296px;
     background: var(--light-grey);
     display: flex;
     flex-direction: column;
@@ -52,16 +56,17 @@
 
 @media screen and (min-width: 768px) {
     .review-item {
-        height: 224px;
+        min-height: 224px;
     }
 }
 
 .review-text-wrap {
-    max-height: 168px; 
+    height: 168px; 
     overflow: hidden;
     position: relative;
     display: block;
     margin-bottom: 24px;
+    transition: max-height 5s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -113,7 +118,6 @@
 
 @media screen and (min-width: 1280px) {
     .review-item.is-expanded .review-text-wrap {
-      max-height: 96px; 
       overflow-y: auto; 
       height: auto;
     }
@@ -146,7 +150,6 @@
     padding: 12px;
     width: 40px;
     height: 40px;
-    opacity: transparent;
     transition: opacity 250ms ease;
 }
 
