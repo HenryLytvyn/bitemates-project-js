@@ -39,7 +39,9 @@
   width: 258px;
   font-weight: 300;
   padding-bottom: 40px;
+  
 }
+
 li {
   display: flex;
   align-items: center; /* вирівнює іконку і текст по центру */
@@ -57,6 +59,7 @@ li {
   justify-content: flex-start;
   flex-direction: row;
   gap: 10px;
+  border: transparent;
 }
 
 #message {
@@ -70,6 +73,8 @@ li {
   width: 320px;
   height: 128px;
   background: #e4e5e6;
+  border: transparent;
+  resize: none;
 }
 
 #contactForm {
@@ -109,6 +114,7 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
   color: #f0f0f0;
+  border: transparent;
 }
 #contactForm button:hover,
 #contactForm button:focus {
