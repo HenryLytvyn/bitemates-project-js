@@ -1,8 +1,24 @@
 .theme-switcher {
-  position: relative;
+  position: absolute;
+  top: 20px;
+  left: 210px;
+
   display: inline-block;
   width: 48px;
   height: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .theme-switcher {
+    top: 36px;
+    left: 310px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .theme-switcher {
+    left: 800px;
+  }
 }
 
 .theme-switcher input {
