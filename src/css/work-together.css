@@ -57,6 +57,7 @@ li {
   justify-content: flex-start;
   flex-direction: row;
   gap: 10px;
+  border: transparent;
 }
 
 #message {
@@ -70,6 +71,7 @@ li {
   width: 320px;
   height: 128px;
   background: #e4e5e6;
+  border: transparent;
 }
 
 #contactForm {
