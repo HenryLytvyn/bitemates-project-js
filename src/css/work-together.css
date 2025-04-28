@@ -157,6 +157,34 @@ li {
     width: 173px;
     letter-spacing: 0.01em;
   }
+  .section-work-together {
+    position: relative;
+    overflow: visible;
+  }
+
+  .decor {
+    position: absolute;
+    top: -55px;
+    right: 30px;
+    width: 336px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 768px) and (max-resolution: 96dpi) {
+    .decor {
+      background-image: url(../img/work-together-svg/decor\ bg1x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .decor {
+      background-image: url(../img/work-together-svg/decor\ bg2x.png);
+    }
+  }
 }
 @media screen and (min-width: 1280px) {
   .container-work-together {
@@ -197,6 +225,22 @@ li {
     justify-content: space-between;
     align-items: flex-start;
     gap: 136px;
+  }
+  .decor {
+    top: -20px;
+    right: 30px;
+    width: 526px;
+    height: 408px;
+  }
+  @media screen and (min-width: 1280px) and (max-resolution: 96dpi) {
+    .decor {
+      background-image: url(../img/work-together-svg/decor\ bg\ desktop@1x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .decor {
+      background-image: url(../img/work-together-svg/decor\ bg\ desktop@2x.png);
+    }
   }
 }
 .email-label {
