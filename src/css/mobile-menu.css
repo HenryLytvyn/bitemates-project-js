@@ -10,6 +10,13 @@
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.mobile-menu.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 .mobile-menu-container {
   position: relative;

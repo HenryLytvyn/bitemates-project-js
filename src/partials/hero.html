@@ -5,7 +5,18 @@
    </div>
         <h1 class="hero-title">
           HELLO, I AM 
-          <img src="../img/hero/img.jpg" alt="developer" class="hero-img">
+          <picture>
+    <source 
+      srcset="/img/hero/img-1x.webp 1x, /img/hero/img-2x.webp 2x" 
+      type="image/webp"
+    >
+    <img 
+      src="/img/hero/img-1x.webp" 
+      alt="developer" 
+      class="hero-img"
+    >
+  </picture>
+
           </h1>
           <span class="hero-title-span">FULLSTACK DEVELOPER</span>
         <div class="order-and-text">
@@ -62,5 +73,4 @@
         </ul>
     </section>
   </div>
-  </body>
-</html>
+ 
