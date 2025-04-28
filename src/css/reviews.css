@@ -42,7 +42,7 @@
 .review-item {
     border-radius: 16px;
     padding: 32px;
-    height: 296px;
+    height: auto;
     background: var(--light-grey);
     display: flex;
     flex-direction: column;
@@ -61,6 +61,7 @@
     overflow: hidden;
     position: relative;
     display: block;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,7 +81,6 @@
 .review-text {
     font-weight: 300;
     color: var(--black);
-    margin-bottom: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -89,54 +89,46 @@
     position: relative;
   }
 
-  @media screen and (min-width: 768px) {
-    .review-text {
-        -webkit-line-clamp: 4;
-    }
-  }
-
-  .review-read-more-btn {
-    background: none;
-    border: none;
-    color: rgba(41, 41, 41, 0.6); 
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 0;
-    margin-left: 4px; 
-    white-space: nowrap;
-  }
-
   @media screen and (min-width: 1280px) {
-    .review-read-more-btn {
-      display: none; 
+    .review-text {
+        display: block; 
+        overflow: visible;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: unset;
+        text-overflow: unset;
     }
-  }
+}
 
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--hover-grey); 
-    border-radius: 4px; 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--hover-grey); 
+.review-item.is-expanded .review-text-wrap {
+    max-height: none;
+    overflow: visible;
+    height: auto;
+}
+
+.review-item.is-expanded .review-text {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    display: block;
+}
+
+@media screen and (min-width: 1280px) {
+    .review-item.is-expanded .review-text-wrap {
+      max-height: 96px; 
+      overflow-y: auto; 
+      height: auto;
+    }
   }
 
 .review-author-info {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 16px;
-
 }
 
 .reviewer-name {
     font-weight: 600;
     color: var(--black);
-    
 }
 
 .reviews-btn-wrap {
@@ -170,7 +162,6 @@
 
 .review-arrow-icon {
     pointer-events: none;
-    
 }
 
 .reviews-btn:disabled {
