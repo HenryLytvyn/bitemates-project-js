@@ -119,6 +119,11 @@
   display: flex;
   justify-content: center;
 }
+.my-projects .load_underline {
+  width: 106px;
+  height: 2px;
+  background-color: var(--accet-green);
+}
 @media screen and (min-width: 768px) {
   .my-projects {
     padding-top: 62px;
@@ -154,6 +159,11 @@
   .my-projects .btn_load_more {
     font-size: 20px;
     line-height: 32px;
+  }
+  .my-projects .load_underline {
+    width: 117px;
+    height: 2px;
+    background-color: var(--accet-green);
   }
 }
 @media screen and (min-width: 1280px) {
