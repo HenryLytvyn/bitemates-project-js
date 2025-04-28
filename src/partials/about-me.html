@@ -109,6 +109,28 @@
       </div>
     </div>
     <!--============== DECOR ==============-->
-    <div class="decor"></div>
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          /img/about-me/decor-2-desk@1x.png 1x,
+          /img/about-me/decor-2-desk@2x.png 2x,
+          /img/about-me/decor-2-desk@3x.png 3x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/about-me/decor-6-tabl@1x.png 1x,
+          /img/about-me/decor-6-tabl@2x.png 2x,
+          /img/about-me/decor-6-tabl@3x.png 3x
+        "
+      />
+      <img
+        src="/img/about-me/decor-2-desk.png"
+        class="decor-about-me"
+        alt="decor background"
+      />
+    </picture>
   </div>
 </section>
