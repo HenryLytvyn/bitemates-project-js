@@ -5,19 +5,14 @@
 }
 
 .benefits-title {
-    
     font-weight: 400;
     font-size: 52px;
-    color: #292929;
+    color: var(--black);
     line-height: 1.24;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
-
- .green-color {
-     color: #00b068;
- }
 
 .benefits-img {
     display: none;
@@ -34,10 +29,10 @@
 }
 
 .benefits-icon {
-    background-color: #bcdfd1;
+    background-color: var(--light-accent);
     border-radius: 8px;
     stroke-width: 2px;
-    stroke: #00b068;
+    stroke: var(--accet-green);
 }
 
 .benefits-subtitle {
@@ -105,10 +100,11 @@
         }
     
         .benefits-img {
-           display: flex;
+           display: block;
             position: absolute;
             top: 1px;
             left: 790px;
+            z-index: -1;
         }
     
         .benefits-title {
