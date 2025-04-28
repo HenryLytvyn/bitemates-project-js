@@ -68,14 +68,245 @@ body.dark {
   color: var(--white-dt);
 }
 
-/* h1.dark {
-  color: var(--white-dt);
-} */
+/*#region =============== HEADER =============== */
 
-h3.dark {
+body.dark h1 {
   color: var(--white-dt);
 }
 
-/* .footer-logo.dark {
+body.dark .burger-line {
+  background-color: var(--white-dt);
+}
+
+body.dark .header-nav-item-link {
+  transition: bac;
   color: var(--white-dt);
-} */
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .header-nav-item-link:hover {
+  color: var(--accet-green);
+}
+
+body.dark .order-btn {
+  color: var(--white-dt);
+}
+
+body.dark .green-container {
+  background-color: var(--accet-green-dt);
+}
+
+body.dark .order-link:hover .green-container {
+  color: var(--hover-green-dt);
+}
+
+body.dark .order-link:hover .order-btn {
+  color: var(--hover-grey);
+}
+
+body.dark .hero-text {
+  color: var(--white-dt);
+}
+
+body.dark .hero-list {
+  background-color: var(--charcoal-dt);
+}
+
+body.dark .hero-list-item {
+  color: var(--white-dt);
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .hero-list-item:hover {
+  color: var(--hover-green-dt);
+}
+
+/*#endregion =============== HEADER =============== */
+
+/*#region =============== TECH SKILLS =============== */
+
+body.dark .marquee-container.top {
+  background: var(--dark-accet-dt);
+}
+
+body.dark .marquee-container.bottom {
+  background: var(--charcoal-dt);
+}
+
+body.dark .marquee-top .item {
+  color: var(--white-dt);
+}
+
+body.dark .item-bottom {
+  color: var(--accet-green-dt);
+}
+
+body.dark .dot.green {
+  background: var(--accet-green-dt);
+}
+
+body.dark .dot.black {
+  background: var(--white-dt);
+}
+/*#endregion =============== TECH SKILLS =============== */
+
+/*#region =============== MY PROJECTS =============== */
+
+body.dark .my-projects span {
+  color: var(--white-dt);
+}
+
+body.dark .my-projects .item_text {
+  color: var(--white-dt);
+}
+
+body.dark .my-projects .item_h3 {
+  color: var(--white-dt);
+}
+
+body.dark .my-projects .btn_visit {
+  color: var(--white-dt);
+  background-color: var(--charcoal-dt);
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .my-projects .btn_visit:hover {
+  background-color: var(--hover-charcoal-dt);
+}
+
+body.dark .my-projects .btn_load_more {
+  color: var(--white-dt);
+  background-color: transparent;
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .my-projects .btn_load_more:hover {
+  color: var(--hover-green-dt);
+}
+
+/*#endregion ============ MY PROJECTS ============ */
+
+/*#region =============== BENEFITS =============== */
+
+body.dark .benefits-title {
+  color: var(--white-dt);
+}
+
+/*#endregion ============ BENEFITS ============ */
+
+/*#region =============== FAQ =============== */
+
+body.dark .headline {
+  color: var(--white-dt) !important;
+}
+
+body.dark .ac.is-active {
+  background-color: var(--dark-accet-dt) !important;
+}
+
+body.dark .ac-trigger {
+  color: var(--white-dt) !important;
+}
+
+body.dark .ac-text {
+  color: var(--white-dt) !important;
+}
+
+body.dark .arrow {
+  border-color: var(--white-dt) !important;
+}
+
+body.dark .is-active {
+  background-color: var(--dark-accet-dt) !important;
+  border: none !important;
+}
+
+/*#endregion ============ FAQ ============ */
+
+/*#region =============== REVIEWS =============== */
+
+body.dark .review-item {
+  background-color: var(--charcoal-dt);
+}
+
+body.dark .review-text {
+  color: var(--white-dt);
+}
+
+body.dark .reviewer-name {
+  color: var(--white-dt);
+}
+
+body.dark .reviews-btn {
+  background-color: var(--black-dt);
+  border-color: var(--white-dt);
+}
+
+body.dark .reviews-btn .review-arrow-icon path {
+  stroke: var(--white-dt);
+  opacity: 0.6;
+}
+
+body.dark .reviews-btn:disabled {
+  border: 1px solid var(--light-grey);
+  opacity: 0.3;
+}
+
+/*#endregion ============ REVIEWS ============ */
+
+/*#region =============== WORK TOGETHER =============== */
+
+body.dark .title-work-together {
+  color: var(--white-dt);
+}
+
+body.dark .title-work-together {
+  color: var(--white-dt);
+}
+
+body.dark #email {
+  background-color: var(--charcoal-dt);
+  color: var(--white-dt);
+  border: none;
+}
+
+body.dark #email::placeholder {
+  color: var(--white-dt);
+}
+
+body.dark #message {
+  background-color: var(--charcoal-dt);
+  color: var(--white-dt);
+  border: none;
+}
+
+body.dark #message::placeholder {
+  color: var(--white-dt);
+}
+
+body.dark .work-together-form {
+  background-color: var(--accet-green-dt);
+}
+
+/*#endregion ============ WORK TOGETHER ============ */
+
+body.dark .footer-logo {
+  color: var(--white-dt);
+}
+
+.socials-link {
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+.socials-link:hover {
+  color: var(--hover);
+}
+
+body.dark .socials-link:hover {
+  color: var(--hover);
+}
