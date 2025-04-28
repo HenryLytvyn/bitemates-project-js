@@ -1,7 +1,10 @@
+import wallet_webservice from '../img/my-projects/wallet_webservice.jpg';
+import wallet_webservice_2x from '../img/my-projects/wallet_webservice_x2.jpg';
+
 const projects = [
   {
-    original: '/img/my-projects/wallet_webservice.jpg',
-    originZoom: '/img/my-projects/wallet_webservice_x2.jpg 2x',
+    original: wallet_webservice,
+    originZoom: wallet_webservice_2x,
     description: 'Wallet webservice',
     technologis: 'React, JavaScript, Node JS, Git',
     nameOfProject: 'Wallet webservice',
@@ -100,14 +103,14 @@ const createMarkup = arr =>
           <h3 class="item_h3">${item.nameOfProject}</h3>
           <button class="btn_visit tablet_desktop_vision" type="button" data-link="${item.link}">
             VISIT<svg width="18" height="18" class="item_svg">
-              <use href="/img/svg/sprite.svg#arrow-visit-btn"></use>
+              <use href="./img/svg/sprite.svg#arrow-visit-btn"></use>
             </svg>
           </button>
         </div>
         <div class="item_div_link mobile-only">
           <button class="btn_visit" type="button" data-link="${item.link}">
             VISIT<svg width="18" height="18" class="item_svg">
-              <use href="/img/svg/sprite.svg#arrow-visit-btn"></use>
+              <use href="./img/svg/sprite.svg#arrow-visit-btn"></use>
             </svg>
           </button>
         </div>
