@@ -202,10 +202,16 @@
     pointer-events: none;
   }
   
-  .reviews-btn:disabled .review-arrow-icon path {
+  .reviews-btn:disabled .review-arrow-icon {
     stroke: var(--light-grey);
     opacity: 0.6;
   }
+
+  .review-arrow-icon:disabled {
+    stroke: var(--light-grey);
+    opacity: 0.6;
+  }
+  
 
   .prev-btn-js .arrow-icon {
     transform: rotate(-180deg);
