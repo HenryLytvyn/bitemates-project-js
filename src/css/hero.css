@@ -48,7 +48,7 @@
 /* Styles for Mobile devices */
 @media screen and (max-width: 768px) {
   .hero {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -180,7 +180,7 @@
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
   .hero {
-    padding-bottom: 62px;
+    margin-bottom: 62px;
     position: relative;
     overflow: hidden;
   }
@@ -317,7 +317,7 @@
 /* Styles for Desktop devices */
 @media screen and (min-width: 1280px) {
   .hero {
-    padding-bottom: 82px;
+    margin-bottom: 82px;
     position: relative;
     width: 100%;
     height: 100%;
