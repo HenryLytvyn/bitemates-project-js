@@ -66,6 +66,7 @@
     position: relative;
     display: block;
     margin-bottom: 24px;
+    background-color: var(--light-grey);
     transition: max-height 0.7s ease, height 0.7s ease, padding 0.7s ease;
     
 }
@@ -79,11 +80,23 @@
 @media screen and (min-width: 1280px) {
     .review-text-wrap {
         max-height: 96px;
-        overflow-y: auto; 
+        overflow-y: auto;
         padding-right: 8px; 
         scroll-behavior: smooth;
     }
 }
+
+.review-text-wrap::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  .review-text-wrap::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .review-text-wrap::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-grey);
+  }
 
 .review-text {
     font-weight: 300;
