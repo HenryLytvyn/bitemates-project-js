@@ -1,3 +1,6 @@
+.my-projects .item_list {
+  gap: 0;
+}
 .my-projects {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -59,7 +62,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .my-projects .item_link {
