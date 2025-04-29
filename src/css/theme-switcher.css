@@ -226,12 +226,15 @@ body.dark .my-projects .btn_visit:focus {
 body.dark .my-projects .btn_load_more {
   color: var(--white-dt);
   background-color: transparent;
+}
+
+body.dark .my-projects .btn_load_more span {
   transform: color;
   transition: color 250ms ease;
 }
 
-body.dark .my-projects .btn_load_more:hover,
-body.dark .my-projects .btn_load_more:focus {
+body.dark .my-projects .btn_load_more span:hover,
+body.dark .my-projects .btn_load_more span:focus {
   color: var(--hover-green-dt);
 }
 
