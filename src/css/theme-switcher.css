@@ -1,0 +1,365 @@
+.theme-switcher {
+  position: absolute;
+  top: 20px;
+  left: 210px;
+
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .theme-switcher {
+    top: 36px;
+    left: 310px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .theme-switcher {
+    left: 800px;
+  }
+}
+
+.theme-switcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switcher .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-grey);
+  transition: 0.4s;
+  border-radius: 12px;
+}
+
+.theme-switcher .slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--accet-green);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.theme-switcher input:checked + .slider {
+  background-color: var(--black);
+}
+
+.theme-switcher input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* .cover-circle {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: var(--black);
+} */
+
+/* .theme-switcher .slider::after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 60px;
+  bottom: 2px;
+  background-color: var(--black);
+  transition: 0.8s;
+  border-radius: 50%;
+} */
+
+body.dark {
+  background-color: var(--black-dt);
+  color: var(--white-dt);
+}
+
+/*#region =============== HEADER =============== */
+
+body.dark h1 {
+  color: var(--white-dt);
+}
+
+body.dark .burger-line {
+  background-color: var(--white-dt);
+}
+
+body.dark .header-nav-item-link {
+  color: var(--white-dt);
+  transform: color;
+  transition: color 250ms ease;
+}
+
+body.dark .header-nav-item-link:hover,
+body.dark .header-nav-item-link:focus {
+  color: var(--accet-green);
+}
+
+body.dark .order-btn {
+  color: var(--white-dt);
+}
+
+body.dark .green-container {
+  background-color: var(--accet-green-dt);
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .order-link:hover .green-container,
+body.dark .order-link:focus .green-container {
+  background-color: var(--hover-green-dt);
+}
+
+body.dark .order-link:hover .order-btn,
+body.dark .order-link:focus .order-btn {
+  color: var(--hover-grey);
+}
+
+body.dark .hero-text {
+  color: var(--white-dt);
+}
+
+body.dark .hero-list {
+  background-color: var(--charcoal-dt);
+}
+
+body.dark .hero-list-item {
+  color: var(--white-dt);
+  transform: color;
+  transition: color 250ms ease;
+}
+
+body.dark .hero-list-item:hover,
+body.dark .hero-list-item:focus {
+  color: var(--hover-green-dt);
+}
+
+/*#endregion =============== HEADER =============== */
+
+/*#region =============== MOBILE MENU =============== */
+
+body.dark .mobile-menu {
+  background-color: var(--black-dt);
+  color: var(--white-dt);
+}
+
+body.dark .mobile-menu-list a {
+  color: var(--white-dt);
+  transform: color;
+  transition: color 250ms ease;
+}
+
+body.dark .mobile-menu-list a:hover,
+body.dark .mobile-menu-list a:focus {
+  color: var(--hover-green-dt);
+}
+
+body.dark .mobile-menu-close svg {
+  stroke: var(--white-dt);
+}
+
+/*#endregion ============ MOBILE MENU ============ */
+
+/*#region =============== TECH SKILLS =============== */
+
+body.dark .marquee-container.top {
+  background: var(--dark-accet-dt);
+}
+
+body.dark .marquee-container.bottom {
+  background: var(--charcoal-dt);
+}
+
+body.dark .marquee-top .item {
+  color: var(--white-dt);
+}
+
+body.dark .item-bottom {
+  color: var(--accet-green-dt);
+}
+
+body.dark .dot.green {
+  background: var(--accet-green-dt);
+}
+
+body.dark .dot.black {
+  background: var(--white-dt);
+}
+/*#endregion =============== TECH SKILLS =============== */
+
+/*#region =============== MY PROJECTS =============== */
+
+body.dark .my-projects span {
+  color: var(--white-dt);
+}
+
+body.dark .my-projects .item_text {
+  color: var(--white-dt);
+}
+
+body.dark .my-projects .item_h3 {
+  color: var(--white-dt);
+}
+
+body.dark .my-projects .btn_visit {
+  color: var(--white-dt);
+  background-color: var(--charcoal-dt);
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .my-projects .btn_visit:hover,
+body.dark .my-projects .btn_visit:focus {
+  background-color: var(--hover-charcoal-dt);
+}
+
+body.dark .my-projects .btn_load_more {
+  color: var(--white-dt);
+  background-color: transparent;
+  transform: color;
+  transition: color 250ms ease;
+}
+
+body.dark .my-projects .btn_load_more:hover,
+body.dark .my-projects .btn_load_more:focus {
+  color: var(--hover-green-dt);
+}
+
+/*#endregion ============ MY PROJECTS ============ */
+
+/*#region =============== BENEFITS =============== */
+
+body.dark .benefits-title {
+  color: var(--white-dt);
+}
+
+/*#endregion ============ BENEFITS ============ */
+
+/*#region =============== FAQ =============== */
+
+body.dark .headline {
+  color: var(--white-dt) !important;
+}
+
+body.dark .ac.is-active {
+  background-color: var(--dark-accet-dt) !important;
+}
+
+body.dark .ac-trigger {
+  color: var(--white-dt) !important;
+}
+
+body.dark .ac-text {
+  color: var(--white-dt) !important;
+}
+
+body.dark .arrow {
+  border-color: var(--white-dt) !important;
+}
+
+body.dark .is-active {
+  background-color: var(--dark-accet-dt) !important;
+  border: none !important;
+}
+
+/*#endregion ============ FAQ ============ */
+
+/*#region =============== REVIEWS =============== */
+
+body.dark .review-item {
+  background-color: var(--charcoal-dt);
+}
+
+body.dark .review-text {
+  color: var(--white-dt);
+  background-color: var(--charcoal-dt);
+}
+
+body.dark .reviewer-name {
+  color: var(--white-dt);
+}
+
+body.dark .reviews-btn {
+  background-color: var(--black-dt);
+  border-color: var(--white-dt);
+}
+
+body.dark .reviews-btn .review-arrow-icon {
+  stroke: var(--white-dt);
+  opacity: 0.6;
+}
+
+body.dark .reviews-btn:disabled {
+  border: 1px solid var(--light-grey);
+  opacity: 0.3;
+}
+
+/*#endregion ============ REVIEWS ============ */
+
+/*#region =============== WORK TOGETHER =============== */
+
+body.dark .title-work-together {
+  color: var(--white-dt);
+}
+
+body.dark .section-work-together .text {
+  color: var(--white-dt);
+}
+
+body.dark #email {
+  background-color: var(--charcoal-dt);
+  color: var(--white-dt);
+  border: none;
+}
+
+body.dark #email::placeholder {
+  color: var(--white-dt);
+}
+
+body.dark #message {
+  background-color: var(--charcoal-dt);
+  color: var(--white-dt);
+  border: none;
+}
+
+body.dark #message::placeholder {
+  color: var(--white-dt);
+}
+
+body.dark .work-together-form {
+  background-color: var(--accet-green-dt);
+}
+
+/*#endregion ============ WORK TOGETHER ============ */
+
+body.dark .footer-logo {
+  color: var(--white-dt);
+}
+
+body.dark .footer-madeBy {
+  color: var(--white-dt);
+}
+
+.socials-link {
+  transform: color;
+  transition: color 250ms ease;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--hover);
+}
+
+body.dark .socials-link:hover {
+  color: var(--hover);
+}

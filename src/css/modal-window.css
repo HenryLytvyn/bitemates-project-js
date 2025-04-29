@@ -1,0 +1,80 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.is-hidden {
+  display: none;
+  
+}
+.modal-window {
+  background: #f0f0f0;
+  border: 1px solid #e4e5e6;
+  border-radius: 16px;
+  padding: 48px 32px;
+
+  max-width: 360px;
+  max-height: 328px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.container-windows {
+  width: 256px;
+  height: 232px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00b068;
+  padding-bottom: 16px;
+  margin-top: 0;
+}
+.modal-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #292929;
+}
+@media screen and (min-width: 768px) {
+  .modal-backdrop {
+    padding: 32px; 
+  }
+  .modal-window {
+    padding: 64px;
+
+    max-width: 492px;
+  }
+  .container-windows {
+    width: 364px;
+      height: 152px;
+  }
+}
