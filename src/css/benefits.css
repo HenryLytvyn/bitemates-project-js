@@ -18,6 +18,10 @@
     display: none;
 }
 
+.benefits-list li {
+    display: block;
+}
+
 .benefits-list {
     display: flex;
     flex-direction: column;
@@ -101,6 +105,7 @@
 }
 }
 
+/* Benefits desc */
 
 @media  screen and (min-width: 1280px) {
 .section-benefits {
