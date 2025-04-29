@@ -1,32 +1,32 @@
-import wallet_webservice from '../img/my-projects/wallet_webservice.jpg';
-import wallet_webservice_2x from '../img/my-projects/wallet_webservice_x2.jpg';
+import wallet_webservice from '../img/my-projects/wallet_webservice.webp';
+import wallet_webservice_2x from '../img/my-projects/wallet_webservice_x2.webp';
 
-import green_harvest from '../img/my-projects/green_harvest.jpg';
-import green_harvest_2x from '../img/my-projects/green_harvest_x2.jpg';
+import green_harvest from '../img/my-projects/green_harvest.webp';
+import green_harvest_2x from '../img/my-projects/green_harvest_x2.webp';
 
-import english_excellence from '../img/my-projects/english_excellence.jpg';
-import english_excellence_2x from '../img/my-projects/english_excellence_x2.jpg';
+import english_excellence from '../img/my-projects/english_excellence.webp';
+import english_excellence_2x from '../img/my-projects/english_excellence_x2.webp';
 
-import power_pulse from '../img/my-projects/power_pulse.jpg';
-import power_pulse_2x from '../img/my-projects/power_pulse_x2.jpg';
+import power_pulse from '../img/my-projects/power_pulse.webp';
+import power_pulse_2x from '../img/my-projects/power_pulse_x2.webp';
 
-import mimino from '../img/my-projects/mimino.jpg';
-import mimino_2x from '../img/my-projects/mimino_x2.jpg';
+import mimino from '../img/my-projects/mimino.webp';
+import mimino_2x from '../img/my-projects/mimino_x2.webp';
 
-import vyshyvanka from '../img/my-projects/vyshyvanka.jpg';
-import vyshyvanka_2x from '../img/my-projects/vyshyvanka_x2.jpg';
+import vyshyvanka from '../img/my-projects/vyshyvanka.webp';
+import vyshyvanka_2x from '../img/my-projects/vyshyvanka_x2.webp';
 
-import chego_jewelry from '../img/my-projects/chego_jewelry.jpg';
-import chego_jewelry_2x from '../img/my-projects/chego_jewelry_x2.jpg';
+import chego_jewelry from '../img/my-projects/chego_jewelry.webp';
+import chego_jewelry_2x from '../img/my-projects/chego_jewelry_x2.webp';
 
-import energy_flow from '../img/my-projects/energy_flow.jpg';
-import energy_flow_2x from '../img/my-projects/energy_flow_x2.jpg';
+import energy_flow from '../img/my-projects/energy_flow.webp';
+import energy_flow_2x from '../img/my-projects/energy_flow_x2.webp';
 
-import fruitbox from '../img/my-projects/fruitbox.jpg';
-import fruitbox_2x from '../img/my-projects/fruitbox_x2.jpg';
+import fruitbox from '../img/my-projects/fruitbox.webp';
+import fruitbox_2x from '../img/my-projects/fruitbox_x2.webp';
 
-import starlight_studio from '../img/my-projects/starlight_studio.jpg';
-import starlight_studio_2x from '../img/my-projects/starlight_studio_x2.jpg';
+import starlight_studio from '../img/my-projects/starlight_studio.webp';
+import starlight_studio_2x from '../img/my-projects/starlight_studio_x2.webp';
 
 import arrow_svg from '../img/svg/sprite.svg#arrow-visit-btn';
 
