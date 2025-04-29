@@ -243,6 +243,17 @@ body.dark .benefits-title {
   color: var(--white-dt);
 }
 
+body.dark .benefits-txt {
+  color: var(--white-dt);
+}
+
+body.dark .benefits-item-icon {
+  background-color: var(--dark-accet-dt);
+}
+
+body.dark .benefits-item-icon svg {
+  color: var(--accet-green-dt);
+}
 /*#endregion ============ BENEFITS ============ */
 
 /*#region =============== FAQ =============== */
@@ -282,6 +293,10 @@ body.dark .review-item {
 
 body.dark .review-text {
   color: var(--white-dt);
+  background-color: var(--charcoal-dt);
+}
+
+body.dark .review-text-wrap {
   background-color: var(--charcoal-dt);
 }
 
