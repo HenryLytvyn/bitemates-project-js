@@ -66,6 +66,7 @@
     position: relative;
     display: block;
     margin-bottom: 24px;
+    background-color: var(--light-grey);
     transition: max-height 0.7s ease, height 0.7s ease, padding 0.7s ease;
     
 }
@@ -79,11 +80,23 @@
 @media screen and (min-width: 1280px) {
     .review-text-wrap {
         max-height: 96px;
-        overflow-y: auto; 
+        overflow-y: auto;
         padding-right: 8px; 
         scroll-behavior: smooth;
     }
 }
+
+.review-text-wrap::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  .review-text-wrap::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .review-text-wrap::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-grey);
+  }
 
 .review-text {
     font-weight: 300;
@@ -133,6 +146,11 @@
     gap: 16px;
 }
 
+.review-author-img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
 .reviewer-name {
     font-weight: 600;
     color: var(--black);
@@ -148,12 +166,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--black);
+    border: 1px solid #e4e5e6;;
     border-radius: 8px;
     padding: 12px;
     width: 40px;
     height: 40px;
     transition: opacity 250ms ease;
+}
+
+.reviews-btn:hover {
+  background: #e4e5e6;
+  border-color: var(--black); 
 }
 
 @media screen and (min-width: 1280px) {
@@ -168,6 +191,8 @@
 
 .review-arrow-icon {
     pointer-events: none;
+    stroke: black;
+   
 }
 
 .reviews-btn:disabled {

@@ -4,7 +4,6 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import axios from 'axios';
 
-
 const REVIEWS_URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
 const reviewsList = document.querySelector('.reviews-list-js');
