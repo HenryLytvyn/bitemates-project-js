@@ -6,8 +6,8 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
 @import url('./fonts.css');
+@import url('./base.css');
 @import url('./container.css');
 
 /* Sections style */
@@ -23,3 +23,4 @@
 @import url('./work-together.css');
 @import url('./footer.css');
 @import url('./modal-window.css');
+@import url('./theme-switcher.css');

@@ -10,5 +10,4 @@ import './js/reviews.js';
 import './js/work-together.js';
 // import './js/footer.js';
 import './js/modal-window.js';
-
-
+import './js/theme-switch.js';
