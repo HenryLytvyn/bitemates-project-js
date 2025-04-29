@@ -48,14 +48,15 @@
   font-size: 24px;
 }
 .mobile-menu-list {
-  list-style: none;
-  padding: 296px 0 0;
-  margin: 0;
+  padding-top: 260px;
+  padding-left: 119px;
+  padding-right: 119px;
+  padding-bottom: 324px;
   text-align: center;
   width: 100%;
 }
 .mobile-menu-list li {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .mobile-menu-list a {
   font-family: var(--main-font);
