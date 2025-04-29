@@ -25,7 +25,7 @@
     <script type="module" crossorigin src="/bitemates-project-js/index.js"></script>
     <link rel="modulepreload" crossorigin href="/bitemates-project-js/assets/vendor-vFHD_W4z.js">
     <link rel="stylesheet" crossorigin href="/bitemates-project-js/assets/vendor-L2OQvYJV.css">
-    <link rel="stylesheet" crossorigin href="/bitemates-project-js/assets/index-Bs0A2LFz.css">
+    <link rel="stylesheet" crossorigin href="/bitemates-project-js/assets/index-uKpxsHzA.css">
   </head>
   <body>
     <div class="container">
@@ -53,6 +53,11 @@
         <span class="burger-line"></span>
       </button>
     </div>
+
+    <label class="theme-switcher">
+      <input type="checkbox" id="theme-toggle-js" />
+      <span class="slider"></span>
+    </label>
   </section>
 </div>
 
@@ -103,43 +108,42 @@
         that reflect each client’s unique personality.
       </p>
     </div>
-    <ul class="hero-list">
-      <li class="hero-list-item">
-        <a
-          href="https://www.instagram.com/goitclub/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Instagram</a
-        >
-      </li>
-      <li class="hero-list-item">
-        <a
-          href="https://www.facebook.com/goITclub/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Facebook</a
-        >
-      </li>
-      <li class="hero-list-item">
-        <a
-          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Linkedin</a
-        >
-      </li>
-      <li class="hero-list-item">
-        <a
-          href="https://github.com/HenryLytvyn/bitemates-project-js"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-      </li>
-    </ul>
   </section>
 </div>
-
+<ul class="hero-list">
+  <li class="hero-list-item">
+    <a
+      href="https://www.instagram.com/goitclub/"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Instagram</a
+    >
+  </li>
+  <li class="hero-list-item">
+    <a
+      href="https://www.facebook.com/goITclub/"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Facebook</a
+    >
+  </li>
+  <li class="hero-list-item">
+    <a
+      href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Linkedin</a
+    >
+  </li>
+  <li class="hero-list-item">
+    <a
+      href="https://github.com/HenryLytvyn/bitemates-project-js"
+      target="_blank"
+      rel="noopener noreferrer"
+      >GitHub</a
+    >
+  </li>
+</ul>
 
       <div class="container">
   <section class="mobile-menu visually-hidden">
@@ -150,7 +154,7 @@
           LLOYD<span class="mobile-menu-logo-span">JEFFERSON.</span>
         </p>
         <button class="mobile-menu-close" aria-label="Close menu">
-          <svg
+          <!-- <svg
             width="32"
             height="32"
             viewBox="0 0 32 32"
@@ -171,6 +175,10 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             />
+          </svg> -->
+
+          <svg width="32" height="32">
+            <use href="/bitemates-project-js/assets/sprite-B96ARFYj.svg#mobile-menu-close"></use>
           </svg>
         </button>
       </div>
@@ -478,7 +486,7 @@
         </p>
         <ul class="work-together-info">
           <li>
-            <svg class="footer-social-icon" width="24" height="24">
+            <svg width="24" height="24">
               <use href="/bitemates-project-js/assets/sprite-B96ARFYj.svg#phone"></use>
             </svg>
             <a class="work-together-tel" href="tel:+380904567890"
@@ -486,7 +494,7 @@
             >
           </li>
           <li>
-            <svg class="footer-social-icon" width="24" height="24">
+            <svg width="24" height="24">
               <use href="/bitemates-project-js/assets/sprite-B96ARFYj.svg#email"></use>
             </svg>
             <a class="mail" href="mailto:lloydjefferson@gmail.com"
@@ -494,7 +502,7 @@
             >
           </li>
           <li>
-            <svg class="footer-social-icon" width="24" height="24">
+            <svg width="24" height="24">
               <use href="/bitemates-project-js/assets/sprite-B96ARFYj.svg#geolocation"></use>
             </svg>
             <span class="add">USA, New York</span>
@@ -529,7 +537,7 @@
   </div>
 </section>
 
-      <div class="modal-backdrop is-hidden" id="modalBackdrop">
+      <section class="modal-backdrop is-hidden" id="modalBackdrop">
   <div class="modal-window">
     <button class="modal-close-btn" type="button" id="modalCloseBtn">
       <svg
@@ -563,7 +571,7 @@
       </p>
     </div>
   </div>
-</div>
+</section>
 
     </main>
 
@@ -617,12 +625,6 @@
     <p class="footer-madeBy">© Copyright 2024. Made by LloydJefferson</p>
   </div>
 </footer>
-
-    <label class="theme-switcher">
-  <input type="checkbox" id="theme-toggle-js" />
-  <span class="slider"></span>
-</label>
-<span class="cover-circle"></span>
 
 
   </body>
