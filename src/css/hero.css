@@ -119,6 +119,7 @@
     color: var(--black);
   }
   .green-container {
+    cursor: pointer;
     border-radius: 16px;
     width: 100%;
     max-width: 165px;

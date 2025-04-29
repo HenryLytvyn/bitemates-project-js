@@ -134,3 +134,7 @@
     color: var(--black);
   }
 }
+
+.header {
+  position: relative;
+}

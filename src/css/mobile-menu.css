@@ -95,3 +95,7 @@
 .no-scroll {
   overflow: hidden;
 }
+
+.mobile-menu-close svg {
+  stroke: #292929;
+}
