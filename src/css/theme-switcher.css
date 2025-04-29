@@ -282,6 +282,7 @@ body.dark .review-item {
 
 body.dark .review-text {
   color: var(--white-dt);
+  background-color: var(--charcoal-dt);
 }
 
 body.dark .reviewer-name {
@@ -293,7 +294,7 @@ body.dark .reviews-btn {
   border-color: var(--white-dt);
 }
 
-body.dark .reviews-btn .review-arrow-icon path {
+body.dark .reviews-btn .review-arrow-icon {
   stroke: var(--white-dt);
   opacity: 0.6;
 }
