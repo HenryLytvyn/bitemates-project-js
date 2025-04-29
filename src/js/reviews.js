@@ -36,8 +36,6 @@ async function fetchReviews() {
       .join('');
     reviewsList.innerHTML = markup;
 
-  
-
     initSwiper();
 
   } catch (error) {
@@ -105,4 +103,6 @@ reviewsList.addEventListener('click', e => {
     reviewItem.classList.toggle('is-expanded');
   }
 });
+
+
 
