@@ -13,7 +13,6 @@
 
 .is-hidden {
   display: none;
-  
 }
 .modal-window {
   background: #f0f0f0;
@@ -43,6 +42,11 @@
   border: none;
   cursor: pointer;
 }
+
+.modal-close-btn svg {
+  stroke: var(--black);
+}
+
 .modal-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -66,7 +70,7 @@
 }
 @media screen and (min-width: 768px) {
   .modal-backdrop {
-    padding: 32px; 
+    padding: 32px;
   }
   .modal-window {
     padding: 64px;
@@ -75,6 +79,6 @@
   }
   .container-windows {
     width: 364px;
-      height: 152px;
+    height: 152px;
   }
 }

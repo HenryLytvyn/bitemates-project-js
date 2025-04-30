@@ -379,4 +379,8 @@ body.dark .modal-text {
   color: var(--white-dt);
 }
 
+.modal-close-btn svg {
+  stroke: var(--white-dt);
+}
+
 /*#endregion ============ MODAL WINDOW ============ */
