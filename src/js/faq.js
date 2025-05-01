@@ -31,66 +31,44 @@ const faqItems = [
 const ACCORDION_CONFIG = {
   duration: 300,
   showMultiple: false,
-  openOnInit: [0]
+  openOnInit: [0],
 };
 
-const createFaqItemHTML = (item) => `
+const createFaqItemHTML = (item, index) => `
   <li class="ac">
     <h2 class="ac-header">
-      <button class="ac-trigger" type="button">
+      <button
+        class="ac-trigger"
+        type="button"
+        id="trigger-${index}"
+        aria-controls="panel-${index}"
+        aria-expanded="${index === 0}"
+      >
         ${item.info}
         <span class="arrow" aria-hidden="true"></span>
       </button>
     </h2>
-    <div class="ac-panel">
+    <div
+      class="ac-panel"
+      id="panel-${index}"
+      role="region"
+      aria-labelledby="trigger-${index}"
+    >
       <p class="ac-text">${item.more}</p>
     </div>
   </li>
 `;
 
-const handleAccordionClick = (e) => {
-  const trigger = e.target.closest('.ac-trigger');
-  if (!trigger) return;
-
-  const item = trigger.closest('.ac');
-  const panel = item.querySelector('.ac-panel');
-  const arrow = trigger.querySelector('.arrow');
-  const isActive = item.classList.contains('is-active');
-
-  document.querySelectorAll('.ac-panel').forEach(p => {
-    p.style.height = '0';
-    p.setAttribute('aria-expanded', 'false');
-  });
-  document.querySelectorAll('.arrow').forEach(a => a.classList.remove('rotate'));
-
-  if (!isActive) {
-    panel.style.height = `${panel.scrollHeight}px`;
-    panel.setAttribute('aria-expanded', 'true');
-    arrow.classList.add('rotate');
-  }
-};
-
 const initFAQ = () => {
-  const accordionContainer = document.querySelector('.accordion-container');
-  if (!accordionContainer) {
-    console.warn('FAQ container not found');
-    return;
-  }
+  const container = document.querySelector('.accordion-container');
+  if (!container) return;
 
-  try {
-    accordionContainer.innerHTML = faqItems.map(createFaqItemHTML).join('');
-    new Accordion('.accordion-container', ACCORDION_CONFIG);
-    accordionContainer.addEventListener('click', handleAccordionClick);
-    document.querySelectorAll('.ac-panel').forEach((panel, index) => {
-      panel.setAttribute('aria-expanded', index === 0 ? 'true' : 'false');
-    });
-  } catch (error) {
-    console.error('Error initializing FAQ:', error);
-  }
+  container.innerHTML = faqItems.map(createFaqItemHTML).join('');
+  new Accordion('.accordion-container', ACCORDION_CONFIG);
 };
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initFAQ);
 } else {
   initFAQ();
-}
+};
