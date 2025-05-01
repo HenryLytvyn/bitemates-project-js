@@ -288,18 +288,23 @@ body.dark .reviewer-name {
 }
 
 body.dark .reviews-btn {
+  border: 1px solid var(--charcoal-dt);
   background-color: var(--black-dt);
-  border-color: var(--white-dt);
+  transform: background-color;
+  transition: background-color 250ms ease;
+}
+
+body.dark .reviews-btn:hover,
+body.dark .reviews-btn:focus {
+  background-color: var(--charcoal-dt);
 }
 
 body.dark .reviews-btn .review-arrow-icon {
   stroke: var(--white-dt);
-  opacity: 0.6;
 }
 
-body.dark .reviews-btn:disabled {
-  border: 1px solid var(--light-grey);
-  opacity: 0.3;
+body.dark .reviews-btn:disabled .review-arrow-icon {
+  stroke: var(--charcoal-dt);
 }
 
 /*#endregion ============ REVIEWS ============ */
@@ -353,13 +358,13 @@ body.dark .footer-madeBy {
   color: var(--white-dt);
 }
 
-.socials-link {
+body.dark .socials-link {
   transform: color;
   transition: color 250ms ease;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+body.dark .socials-link:hover,
+body.dark .socials-link:focus {
   color: var(--hover);
 }
 
@@ -379,7 +384,7 @@ body.dark .modal-text {
   color: var(--white-dt);
 }
 
-.modal-close-btn svg {
+body.dark .modal-close-btn svg {
   stroke: var(--white-dt);
 }
 
