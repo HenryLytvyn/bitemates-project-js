@@ -103,6 +103,3 @@ reviewsList.addEventListener('click', e => {
     reviewItem.classList.toggle('is-expanded');
   }
 });
-
-
-
