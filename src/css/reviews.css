@@ -120,7 +120,6 @@
 }
 
 .review-item.is-expanded .review-text-wrap {
-    max-height: none;
     overflow: visible;
     height: auto;
 }
@@ -198,6 +197,7 @@
 
 .reviews-btn:disabled {
     border: 1px solid var(--light-grey);
+    background-color: var(--white);
     cursor: default;
     pointer-events: none;
   }
