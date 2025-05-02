@@ -1,12 +1,3 @@
-import wallet_webservice from '../img/my-projects/wallet_webservice.jpg';
-import wallet_webservice_2x from '../img/my-projects/wallet_webservice_x2.jpg';
-
-import green_harvest from '../img/my-projects/green_harvest.jpg';
-import green_harvest_2x from '../img/my-projects/green_harvest_x2.jpg';
-
-import english_excellence from '../img/my-projects/english_excellence.jpg';
-import english_excellence_2x from '../img/my-projects/english_excellence_x2.jpg';
-
 import power_pulse from '../img/my-projects/power_pulse.jpg';
 import power_pulse_2x from '../img/my-projects/power_pulse_x2.jpg';
 
@@ -31,30 +22,6 @@ import starlight_studio_2x from '../img/my-projects/starlight_studio_x2.jpg';
 import arrow_svg from '../img/svg/sprite.svg#arrow-visit-btn';
 
 const projects = [
-  {
-    original: wallet_webservice,
-    originZoom: wallet_webservice_2x,
-    description: 'Wallet webservice',
-    technologis: 'React, JavaScript, Node JS, Git',
-    nameOfProject: 'Wallet webservice',
-    link: 'https://github.com/HenryLytvyn/bitemates-project-js',
-  },
-  {
-    original: green_harvest,
-    originZoom: green_harvest_2x,
-    description: 'Green harvest webservice',
-    technologis: 'React, JavaScript, Node JS, Git',
-    nameOfProject: 'Green harvest webservice',
-    link: 'https://github.com/HenryLytvyn/bitemates-project-js',
-  },
-  {
-    original: english_excellence,
-    originZoom: english_excellence_2x,
-    description: 'English Exellence website',
-    technologis: 'React, JavaScript, Node JS, Git',
-    nameOfProject: 'English Exellence website',
-    link: 'https://github.com/HenryLytvyn/bitemates-project-js',
-  },
   {
     original: power_pulse,
     originZoom: power_pulse_2x,
@@ -160,8 +127,6 @@ function renderProjects() {
     loadMoreBtn.style.display = 'none';
   }
 }
-
-renderProjects();
 
 loadMoreBtn.addEventListener('click', renderProjects);
 
