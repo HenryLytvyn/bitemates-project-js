@@ -4,8 +4,10 @@
   left: 210px;
 
   display: inline-block;
+  overflow: hidden;
   width: 48px;
   height: 24px;
+  border-radius: 12px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -35,7 +37,7 @@
   right: 0;
   bottom: 0;
   background-color: var(--light-grey);
-  transition: 0.4s;
+  transition: 0.2s;
   border-radius: 12px;
 }
 
@@ -55,11 +57,44 @@
   background-color: var(--black);
 }
 
+.theme-switcher input:not(:checked) + .slider {
+  transition: 0.2s 0.4s;
+}
+
 .theme-switcher input:checked + .slider:before {
   transform: translateX(24px);
 }
 
+.theme-switcher input:not(:checked) + .slider:before {
+  transition: 0.4s 0.2s;
+}
+
+.theme-switcher .slider:after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: -20px;
+  bottom: 2px;
+  background-color: var(--black);
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.theme-switcher input:checked + .slider:after {
+  transform: translateX(38px);
+  transition: 0.4s 0.2s;
+}
+
+/* .theme-switcher input:not(:checked) + .slider:before {
+  transition: 0.4s 0.2s;
+} */
+
+/* ========== DARK THEME COLORS ========== */
+
 body.dark {
+  transition: 0.4s;
   background-color: var(--black-dt);
   color: var(--white-dt);
 }
