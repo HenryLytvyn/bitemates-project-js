@@ -9,8 +9,11 @@
 
 .ac-panel {
   overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
+
+  height: 0;
+  transition: height 0.4s ease;
+  /*transition: max-height 0.3s ease;*/
+
 }
 .ac.is-active .ac-panel {
   max-height: 1000px; /* Или больше, если содержимое больше */
@@ -148,7 +151,9 @@
   .faq-section .headline {
     position: absolute;
     max-width: 520px;
-    left: 98px;
+
+    left: 32px;
+
     top: 0;
     font-weight: 400;
     font-size: 108px;
@@ -182,4 +187,6 @@
     max-height: 408px;
     margin-top: 612px;
   }
+
 }
+
